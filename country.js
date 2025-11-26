@@ -65,7 +65,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
         fetch(`https://restcountries.com/v3.1/alpha/${border}`)
         .then(res => res.json())
         .then(([countryBoarder])=>{
-          console.log(countryBoarder)
+          
         const BordersTag =  document.createElement('a')
         BordersTag.href = `./country.html?name=${countryBoarder.name.common}`
         BordersTag.innerText = countryBoarder.name.common
